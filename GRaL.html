@@ -1,124 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <html xmlns="http://www.w3.org/1999/xhtml"> -->
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="./css/bootstrap.min.css" />
-        <link rel="stylesheet" href="./css/custom.min.css" />
-
-        <title>Music Store</title>
-
-        <style>
-            @media (max-width:760px){
-                body
-            {
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/custom.min.css" />
+    <title>Music Store</title>
+    <style>
+        @media (max-width: 760px) {
+            body {
                 background-color: rgb(211, 211, 211);
             }
-            
-            h1
-            {
+
+            h1 {
                 color: rgb(15, 15, 120);
                 text-align: center;
             }
-            } 
-                
-            
-        </style>
+        }
+    </style>
+</head>
 
-
-    </head>
-
-    <body>
-        <button 
-                        class="btn btn-primary mt-5 ms-5" 
-                        type="button" data-bs-toggle="offcanvas" 
-                        data-bs-target="#offcanvas" aria-controls="offcanvas">
-                            GRaL
-                    </button>
-        <div class="container">
-            <div class="jumbotron" style="text-align: center;">
-                <h1>GRaL</h1>
-            </div>
+<body>
+    <button class="btn btn-primary mt-5 ms-5" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas" aria-controls="offcanvas">
+        GRaL
+    </button>
+    <div class="container">
+        <div class="jumbotron" style="text-align: center;">
+            <h1>GRaL</h1>
         </div>
+    </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title">Offcanvas</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas"
+                    aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Offcanvas</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            En este menú podrás descubrir todas tus posibilidades dentro de nuestra increíble
+                            página.
                         </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                En este menú podrás descubrir todas tus posibilidades dentro de nuestra increíble página.
-                            </div>
-                            <div class="mt-4">
-                                <!-- Botones directamente en lugar de un selector -->
-                                <button type="button" class="btn btn-success mb-2">Sarrera</button><br>
-                                <button type="button" class="btn btn-warning mb-2">Araudia</button><br>
-                                <button type="button" class="btn btn-danger mb-2">Egutegiak</button><br>
-                                <button type="button" class="btn btn-danger mb-2">Taldea</button><br>
-                                <button type="button" class="btn btn-danger mb-2">Memoria</button><br>
-                                <button type="button" class="btn btn-danger mb-2">Galdetegia</button><br>
-                            </div>
-                            
+                        <div class="mt-4">
+                            <!-- Botones con separación vertical -->
+                            <button type="button" class="btn btn-success mb-2">Sarrera</button><br>
+                            <button type="button" class="btn btn-warning mb-2">Araudia</button><br>
+                            <button type="button" class="btn btn-danger mb-2">Egutegiak</button><br>
+                            <button type="button" class="btn btn-danger mb-2">Taldea</button><br>
+                            <button type="button" class="btn btn-danger mb-2">Memoria</button><br>
+                            <button type="button" class="btn btn-danger mb-2">Galdetegia</button><br>
                         </div>
                     </div>
-                    
-                <img src="ehu.jpg" alt="Diskoaren azala" title= "Diskoaren azala" border="0" height=200 width=500 style= "text-align: center;" class="img-fluid" />
-                </div> 
-                <div class="col-md-3">
-                    <!-- Sección 1 -->
-                    <div>
-                        <!-- Añadir imagen y texto aquí -->
-                        <img src="liburua.jpg" alt="Imagen 1" class="img-fluid" />
-                        <p>Gradu Amaierako Lana burutzeko bete beharreko arau multzoa kontsultatu.</p>
-                        <button type="button" class="btn btn-warning mb-2">Araudia</button><br>
-                    </div>
                 </div>
-                <div class="col-md-3">
-                    <!-- Sección 2 -->
-                    <div>
-                        <!-- Añadir imagen y texto aquí -->
-                        <img src="imagen2.jpg" alt="Imagen 2" class="img-fluid" />
-                        <p>Texto para la sección 2</p>
+
+                <div class="col-md-12">
+                    <img src="ehu.jpg" alt="Diskoaren azala" title="Diskoaren azala" border="0" height=200
+                        width=500 style="text-align: center;" class="img-fluid" />
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Sección 1 y 2 (par) -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="liburua (1).jpg" alt="Imagen 1" class="img-fluid" />
+                            <p>Gradu Amaierako Lana burutzeko bete beharreko arau multzoa kontsultatu.</p>
+                            <button type="button" class="btn btn-warning mb-2">Araudia</button><br>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="egutegia.jpg" alt="Imagen 2" class="img-fluid" />
+                            <p>Deialdiak, matrikulak eta beste hainbat data kontsultatu.</p>
+                            <button type="button" class="btn btn-warning mb-2">Egutegia</button><br>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <!-- Sección 3 -->
-                    <div>
-                        <br>
-                        <!-- Añadir imagen y texto aquí -->
-                        <img src="imagen3.jpg" alt="Imagen 3" class="img-fluid" />
-                        <p>Texto para la sección 3</p>
+                <div class="col-md-6">
+                    <!-- Sección 3 y 4 (par) -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="galdetegia.jpg" alt="Imagen 3" class="img-fluid" />
+                            <p>Deialdiak, matrikulak eta beste hainbat data kontsultatu.</p>
+                            <button type="button" class="btn btn-warning mb-2">Galdetegia</button><br>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="aboutus.jpg" alt="Imagen 4" class="img-fluid" />
+                            <p>Nor gara eta zein da webgune honen helburua?</p>
+                            <button type="button" class="btn btn-warning mb-2">Taldea</button><br>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <!-- Sección 4 -->
+                <div class="col-md-12">
+                    <!-- Sección 5 -->
                     <div>
                         <!-- Añadir imagen y texto aquí -->
-                        <img src="imagen4.jpg" alt="Imagen 4" class="img-fluid" />
-                        <p>Texto para la sección 4</p>
+                        <img src="memoria.jpg" alt="Imagen 5" class="img-fluid" />
+                        <p>Aurreko urteetan defendaturiko GrALen bilduma</p>
+                        <button type="button" class="btn btn-warning mb-2">Memoria</button><br>
                     </div>
                 </div>
-                <button width=20>aa</button>
-                <div class="col-sm-8">
-                    
-                </div>
+                <div class="col-sm-8"></div>
             </div>
         </div>
-        <!-- Optional JavaScript -->
-
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="./js/jquery-3.1.1.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-    </body>
+    </div>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
 </html>
