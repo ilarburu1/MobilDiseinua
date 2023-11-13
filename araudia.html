@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/custom.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araudia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, p {
+            margin-bottom: 1em;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* Agregado para mejorar la legibilidad del enlace */
+        a {
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-primary mt-5 ms-5" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas" aria-controls="offcanvas">
+        MENUA
+    </button>
+    <div class="container">
+        <div class="jumbotron" style="text-align: center;">
+            <h1>ARAUDIA</h1>
+        </div>
+    </div>
+
+    <!-- Nuevo contenedor para el título y el texto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p><strong>Izen ematea:</strong> Gradu Amaierako Lanea izena ematea, graduaren 168 kreditu (oinarrizko 60, nahitaezko 66 eta hautazko 42) gainditu ondoren soilik egin ahal izango da, Gaur aplikazioa erabiliz. Matrikula egin ahal izateko,</p>
+                <p>Ikasle batek gaia aukeratzeko unean bi bide ezberdin izango ditu.</p>
+                <p>Ikasleak, lana zein gairen inguruan egin nahi duen badaki, eta horretan lagunduko dion zuzendaria bilatuko du.</p>
+                <p>Ez du argi zein gairen inguruan egin nahi duen lana, beraz, eskaintza publikora jo beharko du. Eskaintza, GAUR aplikazioan agertzen da, hilabetero eguneratuta.</p>
+                <!-- ... (continúa el resto del texto) -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas"
+                    aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Offcanvas</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            En este menú podrás descubrir todas tus posibilidades dentro de nuestra increíble
+                            página.
+                        </div>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-success mb-2">Sarrera</button><br>
+                            <button type="button" class="btn btn-warning mb-2">Araudia</button><br>
+                            <button type="button" class="btn btn-danger mb-2">Egutegiak</button><br>
+                            <button type="button" class="btn btn-danger mb-2">Taldea</button><br>
+                            <button type="button" class="btn btn-danger mb-2">Memoria</button><br>
+                            <button type="button" class="btn btn-danger mb-2">Galdetegia</button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
