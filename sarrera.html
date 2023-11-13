@@ -68,7 +68,7 @@
                         <div class="col-md-12">
                             <img src="liburua (1).jpg" alt="Imagen 1" class="img-fluid" />
                             <p>Gradu Amaierako Lana burutzeko bete beharreko arau multzoa kontsultatu.</p>
-                            <button type="button" id="btnAraudia" class="btn btn-warning mb-2">Araudia</button><br>
+                            <button type="button" class="btn btn-warning mb-2">Araudia</button><br>
                         </div>
                         <div class="col-md-12">
                             <img src="egutegia.jpg" alt="Imagen 2" class="img-fluid" />
@@ -116,7 +116,7 @@
                     window.location.href = 'sarrera.html'; // Reemplaza 'araudia.html' con la URL deseada
                 });
             }
-            var araudiaButton = document.g("btnAraudia");
+            var araudiaButton = document.getElementById("btnAraudia");
             if (araudiaButton) {
                 araudiaButton.addEventListener("click", function() {
                     // Redirige la página actual a la nueva URL
