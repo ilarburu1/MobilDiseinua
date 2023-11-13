@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/custom.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, p {
+            margin-bottom: 1em;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* Agregado para mejorar la legibilidad del enlace */
+        a {
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-primary mt-5 ms-5" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas" aria-controls="offcanvas">
+        MENUA
+    </button>
+    <div class="container">
+        <div class="jumbotron" style="text-align: center;">
+            <h1>ABOUT US</h1>
+        </div>
+    </div>
+
+    <!-- Nuevo contenedor para el título y el texto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p><strong>Nor gara?</strong></p>
+                <p>EHU-ko Ingenieritza Informatikoko hirugarren mailako ikasleak gara. Pertsonen eta Konputagailuen arteko Elkarrekintza irakasgaian sorturiko webgunea da honakoa. </p>
+            </div>
+            <div class="col-md-12">
+                <img src="argazkiak/ehu.jpg" alt="Diskoaren azala" title="Diskoaren azala" border="0" height=200
+                    width=500 style="text-align: center;" class="img-fluid" />
+            </div>
+            <div class="col-md-12">
+                <p><strong>Nor gara?</strong></p>
+                <p>EHU-ko Ingenieritza Informatikoko hirugarren mailako ikasleak gara. Pertsonen eta Konputagailuen arteko Elkarrekintza irakasgaian sorturiko webgunea da honakoa. </p>
+                <p>Ikasleak, lana zein gairen inguruan egin nahi duen badaki, eta horretan lagunduko dion zuzendaria bilatuko du.</p>
+                <p>Ez du argi zein gairen inguruan egin nahi duen lana, beraz, eskaintza publikora jo beharko du. Eskaintza, GAUR aplikazioan agertzen da, hilabetero eguneratuta.</p>
+                <!-- ... (continúa el resto del texto) -->
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas"
+                    aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Offcanvas</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            En este menú podrás descubrir todas tus posibilidades dentro de nuestra increíble
+                            página.
+                        </div>
+                        <div class="mt-4">
+                            <button type="button" id="btnSarrera" class="btn btn-success mb-2">Sarrera</button><br>
+                            <button type="button" id="btnAraudia" class="btn btn-warning mb-2">Araudia</button><br>
+                            <button type="button" id="btnEgutegia" class="btn btn-danger mb-2">Egutegiak</button><br>
+                            <button type="button" id="btnAboutUs" class="btn btn-danger mb-2">AboutUs</button><br>
+                            <button type="button" id="btnMemoria" class="btn btn-danger mb-2">Memoria</button><br>
+                            <button type="button" id="btnGaldetegia" class="btn btn-danger mb-2">Galdetegia</button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var sarreraButton = document.getElementById("btnSarrera");
+            if (sarreraButton) {
+                sarreraButton.addEventListener("click", function() {
+                    // Redirige la página actual a la nueva URL
+                    window.location.href = 'sarrera.html'; // Reemplaza 'araudia.html' con la URL deseada
+                });
+            }
+            var araudiaButton = document.getElementById("btnAraudia");
+            if (araudiaButton) {
+                araudiaButton.addEventListener("click", function() {
+                    // Redirige la página actual a la nueva URL
+                    window.location.href = 'araudia.html'; // Reemplaza 'araudia.html' con la URL deseada
+                });
+            }
+            var egutegiaButton = document.getElementById("btnEgutegia");
+            if (egutegiaButton) {
+                egutegiaButton.addEventListener("click", function() {
+                    window.location.href = 'egutegia.html';
+                });
+            }
+            var aboutUsButton = document.getElementById("btnAboutUs");
+            if (aboutUsButton) {
+                aboutUsButton.addEventListener("click", function() {
+                    window.location.href = 'aboutUs.html'; // Cambia a la URL deseada
+                });
+            }
+            var memoriaButton = document.getElementById("btnMemoria");
+            if (memoriaButton) {
+                memoriaButton.addEventListener("click", function() {
+                    window.location.href = 'memoria.html'; // Cambia a la URL deseada
+                });
+            }
+            var galdetegiaButton = document.getElementById("btnGaldetegia");
+            if (galdetegiaButton) {
+                galdetegiaButton.addEventListener("click", function() {
+                    window.location.href = 'galdetegia.html';
+                });
+            }
+            
+        });
+    
+    </script>
+</body>
+</html>
