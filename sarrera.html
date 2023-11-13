@@ -68,7 +68,7 @@
                         <div class="col-md-12">
                             <img src="liburua (1).jpg" alt="Imagen 1" class="img-fluid" />
                             <p>Gradu Amaierako Lana burutzeko bete beharreko arau multzoa kontsultatu.</p>
-                            <button type="button" class="btn btn-warning mb-2">Araudia</button><br>
+                            <button type="button" id="btnAraudia" class="btn btn-warning mb-2">Araudia</button><br>
                         </div>
                         <div class="col-md-12">
                             <img src="egutegia.jpg" alt="Imagen 2" class="img-fluid" />
@@ -109,7 +109,14 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            var araudiaButton = document.getElementById("btnAraudia");
+            var sarreraButton = document.getElementById("btnSarrera");
+            if (sarreraButton) {
+                sarreraButton.addEventListener("click", function() {
+                    // Redirige la página actual a la nueva URL
+                    window.location.href = 'sarrera.html'; // Reemplaza 'araudia.html' con la URL deseada
+                });
+            }
+            var araudiaButton = document.g("btnAraudia");
             if (araudiaButton) {
                 araudiaButton.addEventListener("click", function() {
                     // Redirige la página actual a la nueva URL
@@ -122,18 +129,25 @@
                     window.location.href = 'egutegia.html';
                 });
             }
-            var galdetegiaButton = document.getElementById("btnGaldetegia");
-            if (galdetegiaButton) {
-                galdetegiaButton.addEventListener("click", function() {
-                    window.location.href = 'galdetegia.html';
-                });
-            }
             var aboutUsButton = document.getElementById("btnAboutUs");
             if (aboutUsButton) {
                 aboutUsButton.addEventListener("click", function() {
                     window.location.href = 'aboutUs.html'; // Cambia a la URL deseada
                 });
             }
+            var memoriaButton = document.getElementById("btnMemoria");
+            if (memoriaButton) {
+                memoriaButton.addEventListener("click", function() {
+                    window.location.href = 'memoria.html'; // Cambia a la URL deseada
+                });
+            }
+            var galdetegiaButton = document.getElementById("btnGaldetegia");
+            if (galdetegiaButton) {
+                galdetegiaButton.addEventListener("click", function() {
+                    window.location.href = 'galdetegia.html';
+                });
+            }
+            
         });
     
     </script>

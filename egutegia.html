@@ -45,6 +45,12 @@
                 <p>Lanaren matrikula egiteko gehienez hiru hautazko ikasgai (18 kreditu) geratu behar zaizkio ikasleari, gradu amaierako lanari dagozkio kedituak izan ezik. Ikasleari gomendatzen zaio matrikula egitea defendatuko duen ikasturtean.</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Agrega la imagen debajo del texto -->
+                <img src="araudia.jpg" alt="Descripción de la imagen" class="img-fluid" />
+            </div>
+        </div>
     </div>
 
     <div class="container d-flex justify-content-center">
@@ -64,12 +70,12 @@
                             página.
                         </div>
                         <div class="mt-4">
-                            <button type="button" class="btn btn-success mb-2">Sarrera</button><br>
-                            <button type="button" class="btn btn-warning mb-2">Araudia</button><br>
-                            <button type="button" class="btn btn-danger mb-2">Egutegiak</button><br>
-                            <button type="button" class="btn btn-danger mb-2">Taldea</button><br>
-                            <button type="button" class="btn btn-danger mb-2">Memoria</button><br>
-                            <button type="button" class="btn btn-danger mb-2">Galdetegia</button><br>
+                            <button type="button" id="btnSarrera" class="btn btn-success mb-2">Sarrera</button><br>
+                            <button type="button" id="btnAraudia" class="btn btn-warning mb-2">Araudia</button><br>
+                            <button type="button" id="btnEgutegia" class="btn btn-danger mb-2">Egutegiak</button><br>
+                            <button type="button" id="btnAboutUs" class="btn btn-danger mb-2">AboutUs</button><br>
+                            <button type="button" id="btnMemoria" class="btn btn-danger mb-2">Memoria</button><br>
+                            <button type="button" id="btnGaldetegia" class="btn btn-danger mb-2">Galdetegia</button><br>
                         </div>
                     </div>
                 </div>
@@ -78,5 +84,50 @@
     </div>
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var sarreraButton = document.getElementById("btnSarrera");
+            if (sarreraButton) {
+                sarreraButton.addEventListener("click", function() {
+                    // Redirige la página actual a la nueva URL
+                    window.location.href = 'sarrera.html'; // Reemplaza 'araudia.html' con la URL deseada
+                });
+            }
+            var araudiaButton = document.getElementById("btnAraudia");
+            if (araudiaButton) {
+                araudiaButton.addEventListener("click", function() {
+                    // Redirige la página actual a la nueva URL
+                    window.location.href = 'araudia.html'; // Reemplaza 'araudia.html' con la URL deseada
+                });
+            }
+            var egutegiaButton = document.getElementById("btnEgutegia");
+            if (egutegiaButton) {
+                egutegiaButton.addEventListener("click", function() {
+                    window.location.href = 'egutegia.html';
+                });
+            }
+            var aboutUsButton = document.getElementById("btnAboutUs");
+            if (aboutUsButton) {
+                aboutUsButton.addEventListener("click", function() {
+                    window.location.href = 'aboutUs.html'; // Cambia a la URL deseada
+                });
+            }
+            var memoriaButton = document.getElementById("btnMemoria");
+            if (memoriaButton) {
+                memoriaButton.addEventListener("click", function() {
+                    window.location.href = 'memoria.html'; // Cambia a la URL deseada
+                });
+            }
+            var galdetegiaButton = document.getElementById("btnGaldetegia");
+            if (galdetegiaButton) {
+                galdetegiaButton.addEventListener("click", function() {
+                    window.location.href = 'galdetegia.html';
+                });
+            }
+            
+        });
+    
+    </script>
 </body>
 </html>
