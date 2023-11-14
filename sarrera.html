@@ -14,38 +14,6 @@
                 box-sizing: border-box;
             }
 
-            .background-container {
-                background-image: url('argazkiak/fi-ehu (1).jpg');
-                background-size: cover;
-                background-position: center top;
-                height: 300px; /* Altura de la sección de la imagen */
-                position: relative;
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la sección del título y menú */
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column; /* Alinea el texto verticalmente */
-                color: white;
-                text-align: center;
-            }
-
-            .container {
-                z-index: 1;
-            }
-
-            .jumbotron {
-                background: none; /* Fondo transparente para el jumbotron */
-                color: white;
-            }
-
             h1 {
                 color: rgb(15, 15, 120);
                 text-align: center;
@@ -55,6 +23,7 @@
 </head>
 
 <body>
+    <header>
         <div class="overlay">
             <button class="btn btn-dark text-white position-fixed top-0 start-0 mt-3 ms-3" type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
@@ -65,9 +34,10 @@
                     <h1>GRaL</h1>
                 </div>
             </div>
-            <img src="argazkiak/fi-ehu (1).jpg" height="300", width="1200"></img>
+            <img src="Eraikina-txiki-eta-luze.jpg" class="img-fluid mb-2 mx-auto my-auto" />
+
         </div>
-    </div>
+    </header>
 
     <div class="container d-flex justify-content-center">
         <div class="row">
@@ -76,37 +46,40 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas"
                     aria-labelledby="offcanvasLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title">Offcanvas</h5>
+                        <h5 class="offcanvas-title">MENUA</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        <div>
-                            En este menú podrás descubrir todas tus posibilidades dentro de nuestra increíble
-                            página.
-                        </div>
-                        <div class="mt-4">
-                            <button type="button" id="btnSarrera" class="btn btn-success mb-2">Sarrera</button><br>
-                            <button type="button" id="btnAraudia" class="btn btn-warning mb-2">Araudia</button><br>
-                            <button type="button" id="btnEgutegia" class="btn btn-danger mb-2">Egutegiak</button><br>
-                            <button type="button" id="btnAboutUs" class="btn btn-danger mb-2">AboutUs</button><br>
-                            <button type="button" id="btnMemoria" class="btn btn-danger mb-2">Memoria</button><br>
-                            <button type="button" id="btnGaldetegia" class="btn btn-danger mb-2">Galdetegia</button><br>
+                    <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                        <div class="offcanvas-body w-75">
+                            <!-- Contenido de la pestaña desplegable -->
+                            <div>
+                                Hautatu aukera bat: 
+                            </div>
+                            <div class="mt-4">
+                                <button type="button" id="btnSarrera" class="btn btn-dark text-white mb-2">Sarrera</button><br>
+                                <button type="button" id="btnAraudia" class="btn btn-dark text-white mb-2">Araudia</button><br>
+                                <button type="button" id="btnEgutegia" class="btn btn-dark text-white mb-2">Egutegiak</button><br>
+                                <button type="button" id="btnAboutUs" class="btn btn-dark text-white mb-2">AboutUs</button><br>
+                                <button type="button" id="btnMemoria" class="btn btn-dark text-white mb-2">Memoria</button><br>
+                                <button type="button" id="btnGaldetegia" class="btn btn-dark text-white mb-2">Galdetegia</button><br>
+                            </div>
                         </div>
                     </div>
+                    
                 </div><br><br>
 
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="argazkiak/liburua (1).jpg" alt="Imagen 1" class="img-fluid mb-2" />
+                            <img src="argazkiak/liburua (1).jpg" alt="Imagen 1" class="img-md" />
                             <p>Gradu Amaierako Lana burutzeko bete beharreko arau multzoa kontsultatu.</p>
-                            <button type="button" class="btn btn-warning mb-2">Araudia</button>
+                            <button type="button" class="btn btn-warning mb-2">Araudia</button><br><br>
                         </div>
                         <div class="col-md-6">
                             <img src="argazkiak/egutegia.jpg" alt="Imagen 2" class="img-fluid mb-2" />
                             <p>Deialdiak, matrikulak eta beste hainbat data kontsultatu.</p>
-                            <button type="button" class="btn btn-warning mb-2">Egutegia</button>
+                            <button type="button" class="btn btn-warning mb-2">Egutegia</button><br><br>
                         </div>
                     </div>
                 
@@ -114,27 +87,20 @@
                         <div class="col-md-6">
                             <img src="argazkiak/galdetegia.jpg" alt="Imagen 3" class="img-fluid mb-2" />
                             <p>Deialdiak, matrikulak eta beste hainbat data kontsultatu.</p>
-                            <button type="button" class="btn btn-warning mb-2">Galdetegia</button>
+                            <button type="button" class="btn btn-warning mb-2">Galdetegia</button><br><br>
                         </div>
                         <div class="col-md-6">
                             <img src="argazkiak/aboutus.jpg" alt="Imagen 4" class="img-fluid mb-2" />
                             <p>Nor gara eta zein da webgune honen helburua?</p>
-                            <button type="button" class="btn btn-warning mb-2">Taldea</button>
+                            <button type="button" class="btn btn-warning mb-2">Taldea</button><br><br>
                         </div>
                     </div>
-                
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="argazkiak/memoria.jpg" alt="Imagen 5" class="img-fluid mb-2" />
-                            <p>Aurreko urteetan defendaturiko GrALen bilduma</p>
-                            <button type="button" class="btn btn-warning mb-2">Memoria</button>
-                        </div>
-                        <!-- Añade otra columna para la segunda imagen -->
-                        <div class="col-md-6">
-                            <img src="tu_otra_imagen.jpg" alt="Otra Imagen" class="img-fluid mb-2" />
-                            <p>Descripción de la otra imagen.</p>
-                            <button type="button" class="btn btn-warning mb-2">Botón</button>
-                        </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <img src="argazkiak/memoria.jpg" alt="Imagen 5" class="img-fluid mb-2" />
+                        <p>Aurreko urteetan defendaturiko GrALen bilduma</p>
+                        <button type="button" class="btn btn-warning mb-2">Memoria</button><br><br>
                     </div>
                 </div>
                 
