@@ -9,7 +9,41 @@
     <style>
         @media (max-width: 760px) {
             body {
-                background-color: rgb(211, 211, 211);
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .background-container {
+                background-image: url('argazkiak/fi-ehu (1).jpg');
+                background-size: cover;
+                background-position: center top;
+                height: 300px; /* Altura de la sección de la imagen */
+                position: relative;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la sección del título y menú */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column; /* Alinea el texto verticalmente */
+                color: white;
+                text-align: center;
+            }
+
+            .container {
+                z-index: 1;
+            }
+
+            .jumbotron {
+                background: none; /* Fondo transparente para el jumbotron */
+                color: white;
             }
 
             h1 {
@@ -21,14 +55,17 @@
 </head>
 
 <body>
-    <button class="btn btn-dark text-white position-fixed top-0 start-0 mt-3 ms-3" type="button"
-        data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
-    MENUA
-</button>
-
-    <div class="container">
-        <div class="jumbotron" style="text-align: center;">
-            <h1>GRaL</h1>
+        <div class="overlay">
+            <button class="btn btn-dark text-white position-fixed top-0 start-0 mt-3 ms-3" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                MENUA
+            </button>
+            <div class="container">
+                <div class="jumbotron" style="text-align: center;">
+                    <h1>GRaL</h1>
+                </div>
+            </div>
+            <img src="argazkiak/fi-ehu (1).jpg" height="300", width="1200"></img>
         </div>
     </div>
 
@@ -57,12 +94,7 @@
                             <button type="button" id="btnGaldetegia" class="btn btn-danger mb-2">Galdetegia</button><br>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-12">
-                    <img src="argazkiak/ehu.jpg" alt="Diskoaren azala" title="Diskoaren azala" border="0" height=200
-                        width=500 style="text-align: center;" class="img-fluid" />
-                </div>
+                </div><br><br>
 
                 <div class="container">
                     <div class="row">
