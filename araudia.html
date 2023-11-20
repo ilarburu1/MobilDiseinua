@@ -24,18 +24,29 @@
             color: #007bff;
             text-decoration: underline;
         }
+        .background-gray-light {
+            background-color: #999;
+        }
     </style>
 </head>
-<body>
-    <button class="btn btn-primary mt-5 ms-5" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvas" aria-controls="offcanvas">
-        MENUA
-    </button>
-    <div class="container">
-        <div class="jumbotron" style="text-align: center;">
-            <h1>ARAUDIA</h1>
-        </div>
-    </div>
+<body class="background-gray-light">
+    <br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div style="position: relative;">
+                            <img src="Eraikina-txiki-eta-luze.jpg" class="img-fluid w-100" />
+                            <div class="jumbotron" style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><br>S
+                                <h1 style="font-size: 3rem; color: white; text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;">ARAUDIA</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <button class="btn btn-dark text-white position-fixed top-0 start-0 mt-3 ms-3" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                MENUA
+            </button>
 
     <!-- Nuevo contenedor para el título y el texto -->
     <div class="container">
@@ -55,25 +66,22 @@
         <div class="row">
             <div class="col-xs-12">
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas"
-                    aria-labelledby="offcanvasLabel">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title">Offcanvas</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <h5 class="offcanvas-title">MENUA</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body w-75">
                         <div>
-                            En este menú podrás descubrir todas tus posibilidades dentro de nuestra increíble
-                            página.
+                            Hautatu aukera bat: 
                         </div>
                         <div class="mt-4">
-                            <button type="button" id="btnSarrera" class="btn btn-success mb-2">Sarrera</button><br>
-                            <button type="button" id="btnAraudia" class="btn btn-warning mb-2">Araudia</button><br>
-                            <button type="button" id="btnEgutegia" class="btn btn-danger mb-2">Egutegiak</button><br>
-                            <button type="button" id="btnAboutUs" class="btn btn-danger mb-2">AboutUs</button><br>
-                            <button type="button" id="btnMemoria" class="btn btn-danger mb-2">Memoria</button><br>
-                            <button type="button" id="btnGaldetegia" class="btn btn-danger mb-2">Galdetegia</button><br>
+                            <button type="button" id="btnSarrera" class="btn btn-dark text-white mb-2">Sarrera</button><br>
+                            <button type="button" id="btnAraudia" class="btn btn-dark text-white mb-2">Araudia</button><br>
+                            <button type="button" id="btnEgutegia" class="btn btn-dark text-white mb-2">Egutegiak</button><br>
+                            <button type="button" id="btnAboutUs" class="btn btn-dark text-white mb-2">AboutUs</button><br>
+                            <button type="button" id="btnMemoria" class="btn btn-dark text-white mb-2">Memoria</button><br>
+                            <button type="button" id="btnGaldetegia" class="btn btn-dark text-white mb-2">Galdetegia</button><br>
                         </div>
                     </div>
                 </div>
