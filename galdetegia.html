@@ -5,13 +5,10 @@
     <link rel="stylesheet" href="./css/custom.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galdetegia</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-        }
-
-        .background-gray-light {
-            background-color: #999;
         }
 
         h1, h2, p {
@@ -21,30 +18,50 @@
         p {
             text-align: justify;
         }
+
+        /* Agregado para mejorar la legibilidad del enlace */
         a {
             color: #007bff;
             text-decoration: underline;
         }
+        .background-gray-light {
+            background-color: #ffffff;
+        }
+
+        .form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container iframe {
+            max-width: 100%; /* Ajusta el ancho del formulario según tus necesidades */
+            max-height: 100%; /* Ajusta la altura del formulario según tus necesidades */
+        } 
     </style>
 </head>
 <body class="background-gray-light">
     <br><br>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div style="position: relative;">
-                    <img src="Eraikina-txiki-eta-luze.jpg" class="img-fluid w-100" />
-                    <div class="jumbotron" style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><br>
-                        <h1 style="font-size: 3rem; color: white; text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;">GALDETEGIA</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div style="position: relative;">
+                            <img src="Eraikina-txiki-eta-luze.jpg" class="img-fluid w-100" />
+                            <div class="jumbotron" style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><br>
+                                <h1 style="font-size: 3rem; color: white; text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;">GALDETEGIA</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div><br>
+            <button class="btn btn-dark text-white position-fixed top-0 start-0 mt-3 ms-3" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                MENUA
+            </button>
+
+            <div class="container mt-5 form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfqe9KJ9rdDuxiv5f5NM-QIaicoKRjMz4PrY9IiukT2lILttQ/viewform?embedded=true" width="640" height="2717" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>  
             </div>
-        </div>
-    </div><br>
-    <button class="btn btn-dark text-white position-fixed top-0 start-0 mt-3 ms-3" type="button"
-        data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
-        MENUA
-    </button>
 
     <div class="container d-flex justify-content-center">
         <div class="row">
@@ -74,7 +91,11 @@
     </div>
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var sarreraButton = document.getElementById("btnSarrera");
